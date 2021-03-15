@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" data-sign="OSR">
+
+  <head>
+    <!-- fix outlook zooming on 120 DPI windows devices -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- So that mobile will display zoomed in -->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <!-- enable media queries for windows phone 8 -->
+    <meta name="format-detection" content="telephone=no, address=no, email=no, date=no">
+
+    <title>SFMC Marketing Email</title>
+
+    <style>
+      @import url('https://outfit-assets-production.s3.amazonaws.com/fonts/Circular/stylesheet.css');
+      @import url('https://outfit-assets-production.s3.amazonaws.com/fonts/helvetica-neue/stylesheet.css');
+      @import url('https://outfit-assets-production.s3.amazonaws.com/fonts/helvetica-neue-condensed/stylesheet.css');
+
+      /** START Overflow Styles **/
+      .overflow {
+        position: relative !important;
+        border: 1px dashed red;
+        color: red !important;
+      }
+
+      .overflow * { 
+        color: inherit !important; 
+      }
+
+      .overflow {
+        border: none;
+        box-shadow: 0 0 0 0.0362rem red;
+        background: rgba(255, 0, 0, 0.4);
+        position: relative;
+        z-index: 999;}
+      .overflow h1, 
+      .overflow h2, 
+      .overflow h3, 
+      .overflow h4, 
+      .overflow h5, 
+      .overflow h6, 
+      .overflow p, 
+      .overflow li { color: red !important; }
+      .overflow::before {
+        content: '+';
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        height: 1.2em;
+        width: 1.2em;
+        max-height: 100%;
+        color: red;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial';
+        font-size: 0.8em;
+        text-align: center;
+        line-height: 1.2em;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .overflow:hover:before {
+        background-color: red;
+        color: white; }
+      .overflow:after {
+        display: none; }
+      .overflow:hover:after {
+        display: block;
+        content: 'Max number of lines exceeded!';
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        color: white;
+        border-radius: 0;
+        padding: 0 1.5em 0 0.5em;
+        box-sizing: border-box;
+        max-height: 100%;
+        font-family: 'Arial';
+        font-size: 0.8em;
+        font-weight: 400;
+        text-align: right;
+        line-height: 1.2em;
+        z-index: 2;
+      }
+
+      .overflow[data-max-height]:hover:after {
+        content: 'Max height exceeded!';  
+      }      
+
+      .overflow[data-wc-hook="container"]:hover:after {
+        content: 'Max word limit exceeded';        
+      }      
+
+      .overflow[data-custom-overflow-message]:hover:after {
+        content: attr(data-custom-overflow-message);
+      }
+
+      .overflow .token-value.token-empty {
+        display: none;
+      }
+
+      /** END Overflow Styles  **/
+
+
+      /* START Small fix that prevents Superscript and Subscript from breaking the element's line-height  */
+      sup,
+      sub {
+        vertical-align: baseline;
+        position: relative;
+        top: -0.4em;        
+        line-height: 1em;
+      }
+
+      sub {
+        top: 0.4em;
+      }   
+      /* END Small fix that prevents Superscript and Subscript from breaking the element's line-height  */
+
+      /* START Various client-specific fixes */
+      html {
+        border-spacing: 0px !important;
+      }
+
+      #outlook a {
+        padding: 0;
+      }
+
+      img {
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+
+      a img {
+        border: none;
+      }
+
+      a {
+        color: #006bab;
+        text-decoration: none;
+      }
+
+      .events a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      td,p,ul,h1,h2 {
+        margin-block-end: 0;
+        margin-block-start: 0;
+      }      
+      /* END Various client-specific fixes */
+
+
+      .location a, .location a:link, .location a:visited,
+      .online-location a, .online-location a:link, .online-location a:visited {
+        font-size: 14px;
+        color: #ffffff;
+      }
+
+      .callToActionDesign--grey .callToAction {
+        background-color: #505050 !important;
+        border: 1px solid #ffffff !important;                     
+      }
+
+      .callToActionDesign--grey .callToAction a {
+        color: #ffffff !important;
+      }
+
+      .callToActionDesign--white .callToAction {
+        background-color: #ffffff !important;
+        border: 1px solid #006bab !important;  
+        color: #006bab !important;
+      }
+
+      .callToActionDesign--white .callToAction a {
+        color: #006bab !important;
+      }
+
+
+      /* START Mobile styles max-width 600px */
+      @media screen and (max-width: 600px) {
+        .mainwrap {
+          width: 100% !important;
+          margin: auto !important;
+        }   
+
+        .colwrap {
+          display: block !important;
+          width: 100% !important;
+          color: red !important;
+        }  
+
+        .mob-float-none {
+          float: none !important;
+        }
+
+        .imgfill {
+          width: 100% !important;
+          height: auto !important;
+          padding: 0px !important;
+        }
+
+        .mobinvis {
+          display: none !important;
+        }
+
+        .testimonialImage--desktop {
+          display: none !important;
+        }
+
+        .testimonialImage--mobile {
+          display: block !important;
+        }
+
+        .desktopIcon {
+          display: none !important;
+        }
+
+        .mobileIcon {
+          display: block !important;
+          margin: 0 auto;
+        }
+
+        .calloutItem {
+          padding: 0 !important;
+          padding-bottom: 20px !important;
+        }
+
+        .calloutItem:last-child {
+          padding-bottom: 0px !important;
+        }
+
+        .pad-mob-0 {
+          padding: 0 !important;
+        }
+        .pad-bot-mob-25 {
+          padding-bottom: 25px !important;
+        }
+        .pad-bot-mob-20 {
+          padding-bottom: 20px !important;
+        }
+      }
+      /* END Mobile styles max-width 600px */
+
+      /* START Mobile styles max-width 480px */
+      @media screen and (max-width: 480px) { 
+        .colwrap-small {
+          display: block !important;
+          width: 100% !important;
+        }     
+
+        .calloutIcon {
+          padding-left: 0 !important;
+          padding-bottom: 20px !important;
+        }
+
+        .mainLogo {
+          height: 40px !important;
+          width: 137.2px !important;
+        }
+
+        .entity-name {
+          font-size: 10px !important;
+          line-height: 12px !important;
+        }
+
+        .desktopIcon {
+          display: none !important;
+        }
+
+        .mobileIcon {
+          display: block !important;
+          margin: 0 auto;
+        }
+      }
+      /* END Mobile styles max-width 480px */
+
+
+      /* START Overflow styling */
+      .entity-name.overflow:before,
+      .entity-name.overflow:after {
+        font-size: 0.7em;
+      }
+      /* END Overflow styling */
+
+
+      /* START css for module section */
+      /*===== Desktop view =====*/
+      .darkgrey-theme {
+        color: #ffffff;
+      }
+      .darkgrey-theme a, .darkgrey-theme a:link, .darkgrey-theme a:visited {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      /*===== Mobile view =====*/
+      @media only screen and (max-width: 480px) {
+        .responsive-td {
+          width:100% !important;
+          display:block !important;
+          padding:0 !important;
+        }
+        .calloutIcon {
+          padding-bottom: 20px;
+        }
+        .mobile-hidden{
+          display: none !important;
+        }
+      }
+
+      /*===== Large mobile / Tablet view =====*/
+      @media only screen and (max-width: 640px) {
+        .mobile-hidden{
+          display: none !important;
+        }
+      }
+      /* END css for module section */ 
+
+      .social-icon-divider:last-child {
+        display: none;
+      }
+
+      .calloutHeadingThemeChoice--light-gray.calloutHeadingContainer {
+        background-color: #e6e6e6 !important;
+      }
+
+      .calloutHeadingThemeChoice--dark-gray.calloutHeadingContainer {
+        background-color: #505050 !important;
+      }
+
+      .calloutHeadingThemeChoice--monash-#006bab.calloutHeadingContainer {
+        background-color: #006dae !important;
+      }
+
+      .calloutHeadingThemeChoice--light-gray .calloutHeadingText {
+        color: #505050 !important;
+      }
+
+      .calloutHeadingThemeChoice--dark-gray .calloutHeadingText {
+        color: #FFFFFF !important;
+      }
+
+      .calloutHeadingThemeChoice--monash-#006bab .calloutHeadingText {
+        color: #FFFFFF !important;
+      }
+
+      .imagePlaceholder {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left top;
+      }
+
+      .imageHeight--265.imagePlaceholder--dual-news-first-column-image,
+      .imageHeight--265.imagePlaceholder--dual-news-second-column-image,
+      .imageHeight--265.imagePlaceholder--article-landscape {
+        background-image: url(https://files.outfit.io/media_library_items/263300/265x265.png);
+      }
+
+      .imageHeight--147.imagePlaceholder--dual-news-first-column-image,
+      .imageHeight--147.imagePlaceholder--dual-news-second-column-image,
+      .imageHeight--147.imagePlaceholder--article-landscape {
+        background-image: url(https://files.outfit.io/media_library_items/270126/265x147.png);
+      }
+
+      .has-image.imagePlaceholder {
+        background-image: unset !important;
+      }
+
+      .no-image.imageHeight--265.imagePlaceholder--dual-news-first-column-image,
+      .no-image.imageHeight--265.imagePlaceholder--dual-news-second-column-image,
+      .no-image.imageHeight--265.imagePlaceholder--article-landscape { height: 265px !important }
+
+      .no-image.imageHeight--147.imagePlaceholder--dual-news-first-column-image,
+      .no-image.imageHeight--147.imagePlaceholder--dual-news-second-column-image,
+      .no-image.imageHeight--147.imagePlaceholder--article-landscape { height: 144px !important }
+
+      .events a {
+        text-decoration: underline !important;
+        text-decoration-color: #006bab !important;
+      }    
+
+      .entityName a {
+        color: inherit !important;
+      }
+
+
+    </style>
+
+  </head>
+  <body bgcolor="#aaaaaa" width="100%" style="Margin: 0;"
+        data-prevent-export-overflow="true">
+    <!--[if mso]>
+<style type="text/css">
+body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
+</style>
+<![endif]-->
+
+    <center style="width: 100%;">
+
+
+      <!--#### MAIN WRAPPER ####-->
+
+      <table class="mainwrap" 
+             width="600" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation"
+             style= "mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; margin: auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#505050;">
+
+        <!--#### HEADER TOP ####-->
+        <tr>
+          <td valign="top" width="100%" 
+              style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-size: 0;">
+            <table width="100%" height="100" valign="top" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                   style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+              <tr>
+                <td valign="top" 
+                    style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 20px; padding-bottom: 20px; padding-right: 25px; padding-left: 25px;">
+                  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                         style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                    <tr>
+                      <!--#### LOGO ####-->
+                      <td valign="top"
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+                        <table width="144" border="0" cellpadding="0" cellspacing="0" role="presentation" align="left"
+                               style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                          <tr>
+                            <td valign="top"
+                                style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+
+                              <a href="https://monash.edu" target="_blank">
+                                <img src="./images/logo.png" width="70" style="display: block; border: 0px; -ms-interpolation-mode: bicubic;">
+                              </a><!--logo--black-->
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <!--#### LOGO ####-->
+                      <!--#### ENTITY NAME ####-->
+                      <td valign="top"
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+
+                        <table valign="top" align="right" width="125"
+                               bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                               style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; border-spacing: 0px; font-family: 'Helvetica Neue Cond';">
+                          <tr>
+                            <td valign="top"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+                              <table align="right" valign="top" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                     style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; font-family: 'Helvetica Neue Cond';">
+                                <tr>
+                                  <td class="entityName"
+                                      valign="top" 
+                                      style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Helvetica Neue Cond'; font-size: 13.85px; line-height: 15.25px; text-transform: uppercase; color: #505050;"
+                                      data-char-limit="30" data-max-height="65">
+                                    <span style="color: #006bab;">Monash</span><br>Entity Name
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>                 
+                          </tr>
+                        </table>
+                      </td>
+                      <!--#### ENTITY NAME ####-->
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td> 
+        </tr>
+        <!--#### //HEADER TOP ####-->
+
+        <!--#### HEADER IMAGE API ####-->
+        <tr>
+          <td width="100%"
+              style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+
+            <img src="./images/header.png"
+                 class="imgfill"
+                 width="100%" height="180"
+                 style="display: block; border: 0px; -ms-interpolation-mode: bicubic;">
+
+          </td> 
+        </tr>
+        <!--#### //HEADER IMAGE API ####-->
+
+        <!-- #### FLEXIBLE CONTENT START ####-->
+        <tr>
+          <td valign="top"
+              style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 25px;">
+            <table width="100%" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                   style= "mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #505050;">
+
+              <tr>
+                <td width="100%" valign="top"
+                    style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 25px; padding-right: 25px; padding-left: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; line-height: 32px; color: #505050;">       
+                  <div data-wc-hook="container" data-wc-max="10">Heading goes here. Limit heading to ten words.</div>
+                </td>
+              </tr>
+              <!--#### //Heading ####-->
+              <!--#### //HEADING BLOCK ####-->
+
+              <!--#### Copy ####-->            
+              <tr>
+                <td width="100%" valign="top"
+                    style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 25px; padding-right: 25px; padding-left: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color:#505050;">       
+                  <span class="firstName">
+                    Hi First Name 
+                    <!--[if !mso]><!-->
+                  <br/><br/>
+                  <!--<![endif]-->                  
+                  </span>                
+                  Lorem ipsum dolor sit amet tristique lacus feugiat eu at luctus enim. Orci porttitor ornare blandit hac neque dui porta tristique cursus suspendisse.
+
+Id pulvinar pellentesque nunc mattis a quis nisl dui ac auctor aliqua. Odio labore lacus facilisis etiam tempor fames auctor volutpat vestibulum quisque vitae nibh pharetra praesent. Mattis enim arcu mattis facilisi iaculis ut libero.
+
+Posuere massa ac elementum est eros in etiam platea aliquet auctor aenean sapien. Tellus nullam habitasse diam mi sagittis tellus aliquam ac scelerisque purus ultrices. Hyperlink example here.
+
+                </td>
+              </tr>
+              <!--#### //Copy ####-->
+    
+              <!--#### Call to Action ####-->
+              <tr>                    
+                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 25px; padding-right: 25px; padding-left: 25px;">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                         style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; background: #006bab;">
+                    <tr>
+                      <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-align: center; padding-top: 9px; padding-bottom: 9px; padding-left: 20px; padding-right: 20px; border: 1px solid #006bab; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #ffffff; text-decoration: none;">
+                        <a href="#" target="_blank" title="Call to Action" data-max-line="1"  
+                           style="display: inline-block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #ffffff; text-decoration: none;">Enter a compelling primary CTA i.e. Register now
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--#### //Call to Action ####-->
+ 
+              <!--#### Events ####-->
+              <tr class="events">
+                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse; padding-bottom: 25px">
+                  <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#505050" align="center" role="presentation"
+                         style="border-spacing: 0; mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; width: 100%; margin: auto;">
+                    <tr>
+                      <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse; text-align: center; padding-top: 30px; padding-bottom: 30px; padding-left: 25px; padding-right: 25px;"
+                          align="center">
+                        <table cellpadding="0" cellspacing="0" width="100%" align="center" role="presentation"
+                               style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; border-spacing: 0; text-align: center; margin: auto;">
+                          <tr>
+                            <td class="colwrap colwrap-small calloutItem"
+                                valign="top" width="33.33%;"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse; width: 33.33%; padding-right: 6.66667px;">
+                              <table cellpadding="0" cellspacing="0" width="100%" align="center" role="presentation"
+                                     style="border-spacing: 0; mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; width: 100%; margin: auto;">
+                                <!--First item start-->
+                                <!--Icon start-->
+                                <tr>
+                                  <td align="center" valign="top"
+                                      style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse; padding-bottom: 20px">
+                                    <img height="50" src="./images/date-icon-png.png" 
+                                         style="display: block; padding: 0px; text-align: center; border: 0px;">
+                                  </td>
+                                </tr>
+                                <!--Icon end-->
+                                <!--Text start-->
+                                <tr>
+                                  <td align="center" valign="top"
+                                      style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse; color:#ffffff; font-size: 14px; line-height: 22px; font-weight: bold; text-align: center;">
+                                    <div data-max-line="5" style="font-size: 14px; line-height: 22px;">Day Date Month i.e. Friday 3 March</div>
+                                  </td>
+                                </tr>
+                                <!--Text end-->
+                                <!--First item end-->
+                              </table>
+                            </td>
+                            <td class="colwrap colwrap-small calloutItem"
+                                valign="top" width="33.33%"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse; width: 33.33%; padding-left: 3.33333px; padding-right: 3.33333px;">
+                              <table cellpadding="0" cellspacing="0" width="100%" align="center" role="presentation"
+                                     style="border-spacing: 0; mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; width: 100%; margin: auto;">
+                                <!--Second item start-->
+                                <!--Icon Start-->
+                                <tr>
+                                  <td align="center"
+                                      valign="top"
+                                      style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse; padding-bottom: 20px">
+                                    <img height="50" src="./images/time-icon-png.png" 
+                                         style="display: block; padding: 0px; text-align: center; border: 0px;">
+                                  </td>
+                                </tr>
+                                <!--Icon End-->
+
+                                <!--Text Start-->
+                                <tr>
+                                  <td align="center" valign="top"
+                                      style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse; color:#ffffff; font-size: 14px; line-height: 22px; font-weight: bold; text-align: center;">
+                                    <div data-max-line="5" style="font-size: 14px; line-height: 22px;">Xam -X.XXpm (timezone - if applicable) i.e. 9am - 3pm (AEDT)</div>
+                                  </td>
+                                </tr>
+                                <!--Text End-->
+                                <!--Second item end-->
+                              </table>
+                            </td>
+                            <td class="colwrap colwrap-small calloutItem"
+                                valign="top" width="33.33%"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse; width: 33.33%; padding-left: 6.66667px;">
+                              <table cellpadding="0" cellspacing="0" width="100%" align="center" role="presentation"
+                                     style="border-spacing: 0; mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; width: 100%; margin: auto;">       
+                                <!--Online Location Third item start-->
+                                <!--Icon start-->
+                                <tr>
+                                  <td class="online-location" align="center"
+                                      valign="top"
+                                      style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse; padding-bottom: 20px">
+                                    <img height="50" src="./images/online-location-icon-png.png" 
+                                         style="display: block; padding: 0px; text-align: center; border: 0px;">
+                                  </td>
+                                </tr>
+                                <!--Icon end-->
+                                <!--Text start-->
+                                <tr>
+                                  <td class="location"
+                                      align="center" valign="top"
+                                      style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; border-collapse: collapse; color:#ffffff; font-size: 14px; line-height: 22px; font-weight: bold; text-align: center;">
+                                    <div data-max-line="5" style="font-size: 14px; line-height: 22px;">Webinar
+                                      Access here</div>
+                                  </td>  
+
+                                </tr>
+                                <!--Text end-->
+                                <!--Online Location Third item end-->
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+              </tr>
+              <!--#### //Events ####-->
+  
+              <!--#### VIDEO BLOCK ####-->
+              <tr>
+                <td width="100%" valign="top" 
+                    style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 20px; padding-right: 0; padding-left: 0;">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                         style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                    <img src="./images/video_api.png"
+                         width="100%"
+                         style="display: block; border: 0px; -ms-interpolation-mode: bicubic;">
+                    <!--#### Video Image API ####-->                                   
+                    <tr>
+                      <td width="100%" 
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+
+                      </td> 
+                    </tr>
+                    <!--#### //Video Image API####-->   
+                    <!--#### Video Title ####-->
+                    <tr>
+                      <td width="100%" 
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 25px; padding-right: 25px; padding-left: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 25px; color:#505050;">
+                        <div data-max-line="2" style="font-size: 20px; line-height: 25px;">Video Title Goes Here - Keep this to a max of 2 lines</div>
+                      </td> 
+                    </tr>
+                    <!--#### //Video Title ####--> 
+                    <!--#### Video Copy ####-->
+                    <tr>
+                      <td width="100%" 
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 25px; padding-right: 25px; padding-left: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color:#505050;">
+                          Place addition content to support your video here.
+
+                          Lorem ipsum dolor sit amet semper aliquam urna leo cursus elit quam faucibus eiusmod congue. Eiusmod posuere neque convallis cras pharetra netus dapibus urna porttitor. Lobortis fames pulvinar bibendum quam tristique vel massa euismod gravida eu.
+                      </td> 
+                    </tr>
+                    <!--#### //Video Copy ####-->
+                  </table>
+                </td>
+              </tr>
+              <!--#### //VIDEO BLOCK ####-->
+              
+              <!--#### CTA CALLOUT ####-->
+              <tr>                    
+                <td width="100%" 
+                    style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 25px">
+                  <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                         style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; background: #505050;">
+                    <tr>
+                      <td  style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 20px; padding-bottom: 25px; padding-left: 25px; padding-right: 25px;">
+                        <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                               style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;"> 
+                          <!--#### Subheading ####-->
+                          <tr>
+                            <td 
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 25px; color: #FFFFFF;">
+                              <div data-max-line="2" style="font-size: 20px; line-height: 25px;">Subheading goes here. Limit heading to ten words</div>
+                            </td>
+                          </tr>
+                          <!--#### //Subheading ####-->
+                          <!--#### Copy ####-->
+                          <tr>
+                            <td 
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 20px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #FFFFFF;">
+                                Lorem ipsum dolor sit amet semper aliquam urna leo cursus elit quam faucibus eiusmod congue.
+                            </td>
+                          </tr>
+                          <!--#### //Copy ####-->
+                          <!--#### Call to Action ####-->
+                          <tr>     
+                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                     style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; background: #505050; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #ffffff; text-decoration: none;">
+                                <tr>
+                                  <td class="callToAction"
+                                      style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 9px; padding-bottom: 9px; padding-left: 20px; padding-right: 20px; border: 1px solid #ffffff; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; ">
+                                    <a href="#" target="_blank" 
+                                       style="display: inline-block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #ffffff; text-decoration: none;" data-max-line="1">Enter a compelling CTA i.e. Find out more</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>   
+                          <!--#### //Call to Action ####--> 
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--#### //CTA CALLOUT ####-->
+              
+              <!--#### CALLOUT ####-->
+              <tr>
+                <td width="100%" 
+                    style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 25px">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                         style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; background: #505050;">
+                    <tr>
+                      <td width="100%"  valign="center"
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 20px; padding-bottom: 20px; padding-left: 25px; padding-right: 25px;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                               style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                          <!--Mobile icon-->
+                          <tr>
+                            <td width="70" align="center"
+                                class="mobileIcon"
+                                style="font-size: 0; display: none; padding-bottom: 10px;">
+                              <img width="70" src="./images/online-location-icon-png.png" 
+                                   style="width: 70px; border: 0px;">                                  
+                            </td>
+                          </tr>
+                          <!--Mobile icon-->
+                          <!--Subheading-->
+                          <tr>
+                            <td width="100%"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 20px; font-size: 20px; line-height: 25px; color: #ffffff;">
+                              <div data-max-line="2" style="font-size: 20px; line-height: 25px;">Subheading goes here. Limit to ten words.</div>
+                            </td>
+                          </tr>
+                          <!--Subheading-->
+                          <!--Copy and icon-->
+                          <tr>
+                            <td width="100%" valign="top"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+                              <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                     style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                                <tr>
+                                  <!--Copy-->
+                                  <td valign="top"
+                                      width="100%"
+                                      style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-size: 16px; line-height: 22px; color: #ffffff;">Lorem ipsum dolor sit amet semper aliquam urna leo cursus elit quam faucibus eiusmod congue. Eiusmod posuere neque convallis cras pharetra netus dapibus urna porttitor. Lobortis fames pulvinar bibendum quam tristique vel massa euismod gravida eu.
+                                  </td>
+                                  <!--Copy-->
+                                  <!--Icon-->
+                                  <td valign="top"
+                                      class="desktopIcon"
+                                      style="font-size: 0; padding-left: 20px;">
+                                    <img width="70" src="https://files.outfit.io/media_library_items/244479/online-location-icon-png.png?qual=editor" 
+                                         style="display: block; width: 70px; border: 0px;">                                  
+                                  </td>
+                                  <!--Icon-->
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <!--Copy and icon-->
+                        </table>
+                      </td>                      
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--#### //CALLOUT ####--> 
+              
+              <!--#### CALLOUT HEADING ####-->
+              <tr>                    
+                <td width="100%" 
+                    style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 25px;">
+                  <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                         style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; background-color: #505050; color: #ffffff;"
+                         class="calloutHeadingThemeChoice--dark-gray
+                                calloutHeadingContainer">
+                    <!--#### Heading ####-->
+                    <tr>
+                      <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 20px; padding-bottom: 20px; padding-right: 25px; padding-left: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 25px;"
+                          class="calloutHeadingText">
+                        <div data-max-line="2" style="font-size: 20px; line-height: 25px;">Section heading - coloured options available</div>
+                      </td>
+                    </tr>
+                    <!--#### //Heading ####--> 
+                  </table>
+                </td>
+              </tr>
+              <!--#### //CALLOUT HEADING ####-->
+              
+              <!--#### DUAL NEWS / ARTICLE ####-->
+              <tr>
+                <td width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-right: 25px; padding-left: 25px; padding-bottom: 25px">
+                  <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                         style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                    <tr>
+                      <!--First Column-->
+                      <td class="colwrap colwrap-small pad-mob-0"
+                          width="50%" valign="top"
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-right: 10px;">
+                        <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                               style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                          <!--Image-->
+                          <tr>
+                            <td width="100%"
+                                class="imageHeight--265 
+                                       imagePlaceholder imagePlaceholder--dual-news-first-column-image"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; padding-bottom: 25px;">
+                              
+                              <img class="imgfill colwrap"
+                                   width="265" height="265" src="./images/laptop_image.png" 
+                                   style="display: block; border: 0px;"> 
+                            </td>
+                          </tr>
+                          <!--Image-->
+                          <!--Subheading-->
+                          <tr>
+                            <td width="100%"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; padding-bottom: 20px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 25px; color: #505050;">
+                              <div data-max-line="2">Subheading goes here</div>
+                            </td>
+                          </tr>
+                          <!--Subheading-->
+                          <!--Copy-->
+                          <tr>
+                            <td width="100%"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; padding-bottom: 20px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #505050;">
+                                Lorem ipsum dolor sit amet semper aliquam urna leo cursus elit quam faucibus eiusmod congue. Eiusmod posuere neque convallis cras pharetra netus dapibus urna porttitor.
+                            </td>
+                          </tr>
+                          <!--Copy-->
+                          <!--Call to Action-->
+                          <tr>     
+                            <td class="pad-bot-mob-25" 
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                     style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; background: #ffffff; ">
+                                <tr>
+                                  <td class="callToAction"
+                                      style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 9px; padding-bottom: 9px; padding-left: 20px; padding-right: 20px; border: 1px solid #006bab; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; color: #006bab;">
+                                    <a href="#" target="_blank" 
+                                       style="display: inline-block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #006bab; text-decoration: none;" data-max-line="1">Find out more</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>   
+                          <!--Call to Action-->
+                        </table>
+                      </td>
+                      <!--First Column-->
+                      <!--Second Column-->
+                      <td class="colwrap colwrap-small pad-mob-0"
+                          width="50%" valign="top"
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-left: 10px;">
+                        <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                               style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                          <!--Image-->
+                          <tr>
+                            <td width="100%"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; padding-bottom: 25px;"
+                                class="imageHeight--265
+                                       imagePlaceholder imagePlaceholder--dual-news-second-column-image">
+                              <img class="imgfill colwrap"
+                                   width="265" height="265" src="./images/laptop_image.png" 
+                                   style="display: block; border: 0px;">     
+                            </td>
+                          </tr>
+                          <!--Image-->
+                          <!--Subheading-->
+                          <tr>
+                            <td width="100%"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; padding-bottom: 20px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 25px; color: #505050;">
+                              <div data-max-line="2">Subheading goes here</div>
+                            </td>
+                          </tr>
+                          <!--Subheading-->
+                          <!--Copy-->
+                          <tr>
+                            <td width="100%"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; padding-bottom: 20px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #505050;">
+                                Lobortis fames pulvinar bibendum quam tristique vel massa euismod gravida eu. Platea mollis dictumst lacus quam fringilla consequat dolore diam vulputate. Feugiat quis sollicitudin euismod ac eiusmod hendrerit convallis.
+                            </td>
+                          </tr>
+                          <!--Copy-->
+                          <!--Call to Action-->
+                          <tr>     
+                            <td class="" 
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                     style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; background: #ffffff; ">
+                                <tr>
+                                  <td class="callToAction"
+                                      style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 9px; padding-bottom: 9px; padding-left: 20px; padding-right: 20px; border: 1px solid #006bab; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; color: {{{account.colors.monash-#006bab}}};">
+                                    <a href="#" target="_blank" 
+                                       style="display: inline-block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #006bab; text-decoration: none;" data-max-line="1">Find out more</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>   
+                          <!--Call to Action--> 
+                        </table>
+                      </td>
+                      <!--Second Column-->
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--#### //DUAL NEWS / ARTICLE ####-->
+
+              <!--#### ARTICLE LANDSCAPE ####-->
+              <tr>
+                <td width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 25px; padding-right: 25px; padding-left: 25px;">
+                  <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                         style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                    <tr>
+                      <!--Image-->
+                      <td class="colwrap colwrap-small pad-bot-mob-20 
+                                 imageHeight--265 
+                                 imagePlaceholder imagePlaceholder--article-landscape
+                                 "
+                          width="50%" valign="top"
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-right: 10px;">
+                        
+                        <img class="imgfill colwrap"
+                             width="265" height="265" src="./images/laptop_image.png" 
+                             style="display: block; border: 0px;">    
+                        
+                      </td>
+                      <!--Image-->
+                      <!--Article-->
+                      <td class="colwrap colwrap-small pad-mob-0"
+                          width="50%" valign="top"
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-left: 10px;">
+                        <table width="100%" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                               style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">    
+                          <!--Subheading-->
+                          <tr>
+                            <td width="100%"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; padding-bottom: 10px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 20px; line-height: 25px; color: #505050;">
+                              <div data-max-line="2">Subheading goes here</div>
+                            </td>
+                          </tr>
+                          <!--Subheading-->
+                          <!--Copy-->
+                          <tr>
+                            <td width="100%"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; padding-bottom: 20px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #505050;">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            </td>
+                          </tr>
+                          <!--Copy-->
+                          <!--Call to Action-->
+                          <tr>     
+                            <td class="pad-bot-mob-25" 
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+                              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                     style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; background: #ffffff;">
+                                <tr>
+                                  <td class="callToAction"
+                                      style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 9px; padding-bottom: 9px; padding-left: 20px; padding-right: 20px; border: 1px solid #006bab; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; color: #006bab;">
+                                    <a href="#" target="_blank" 
+                                       style="display: inline-block; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #006bab; text-decoration: none;" data-max-line="1">Find out more</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>   
+                          <!--Call to Action-->      
+                        </table>
+                      </td>
+                      <!--Article-->
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--#### //ARTICLE LANDSCAPE ####-->
+
+              <!--#### TESTIMONIALS ####-->
+              <tr>
+                <td width="100%" valign="top"
+                    style="padding-bottom: 25px">
+                  <table width="100%" valign="top" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                         style="-webkit-text-size-adjust: none; mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0; background: #505050;">
+                    <tr>
+                      <!-- Image containers testimonial -->
+                      <td class="colwrap"
+                          valign="top" width="300"
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 300px; font-size: 0;">
+                        <table width="100%" valign="top" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                               style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                          <tr>
+                            <!-- Desktop view -->
+                            <td valign="top" class="testimonialImage testimonialImage--desktop" style="font-size: 0;">
+                              <img src="./images/laptop_image.png" 
+                                   width="300" valign="top"
+                                   style="width: 300px; display: block; border: 0px;">
+                            </td>
+                            <!--// Desktop view -->
+                          </tr>
+                        </table>
+                      </td>
+                      <!--// Image containers testimonial -->
+                      <!-- text testimonial -->
+                      <td class="colwrap"
+                          valign="top" width="300"
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 25px; padding-bottom: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; line-height: 28px; background: #505050; color: #ffffff;">
+                        <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                               style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                          
+                          <tr>
+                            <td valign="top"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 25px; padding-left: 25px; padding-right: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; line-height: 28px; color: #ffffff;">
+                              "This is where you will place the quote from the person that is featured in your testimony"
+                            </td>
+                          </tr> 
+                          <tr>
+                            <td valign="top"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-left: 25px; padding-right: 25px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #ffffff;">
+                              <div data-max-line="1">First Name, Position Details</div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <!--// text testimonial -->
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--#### //TESTIMONIALS ####-->
+              
+              <!--#### SIGN OFF ####-->
+              <tr>
+                <td valign="top"
+                    style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-bottom: 20px; padding-left: 25px; padding-right: 25px;">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                         style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                    <tr>
+                      <td valign="top"
+                          style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                               style="mso-padding-alt: 0px; mso-cellspacing: 0px; mso-table-lspace: 0; mso-table-rspace: 0;">
+                          <tr>
+                            <!--Copy-->
+                            <td valign="top"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #505050;">
+                              Regards,
+                              <br>Zlatimir Ramač<br>
+                              Title
+                              <br>
+                            </td>
+                            <!--Copy-->                 
+                            <!--Image-->
+                            <td valign="top" width="90px"
+                                style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 90px; padding-left: 20px;">
+                              <img width="90" src="./images/another profile.png" 
+                                   style="display: block; width: 90px; border: 0px;">          
+                            </td>
+                            <!--Image-->
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--#### //SIGN OFF ####-->
+              
+              <!--#### //SOCIAL MEDIA SECTION ####-->
+              <tr>
+                <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; padding-top: 20px; padding-bottom: 20px; padding-left: 25px; padding-right: 25px; background-color: #505050;">
+
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td class="darkgrey-theme">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td dir="rtl">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                  <!--Icon-->
+                                  <td width="70" class="responsive-td" dir="ltr">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr>
+                                        <td align="center" class="calloutIcon">
+                                          <img alt="Lightbulb" height="70" src="./images/bulb.png" width="70">
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <!--//Icon-->
+                                  <!--Divider-->
+                                  <td class="mobile-hidden" style="width: 25px;">&nbsp;</td>
+                                  <!--//Divider-->
+                                  <!--Content-->
+                                  <td align="left" class="responsive-td" dir="ltr">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">              
+                                      <!--Heading-->
+                                      <tr>
+                                        <td style="font-size: 20px; line-height: 25px; padding-bottom: 25px; color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+                                          Chat to us on social media
+                                        </td>
+                                      </tr>
+                                      <!--//Heading-->               
+                                      <!--Paragraph-->
+                                      <tr>
+                                        <td style="color: #ffffff; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px;">
+                                          Want to learn more about Monash?
+                                            Reach out to us on social media and start the conversation
+                                        </td>
+                                      </tr>
+                                      <!--//Paragraph-->
+                                      <!--Social Media Links-->
+                                      <tr>
+                                        <td style="padding-top: 20px; color: #ffffff; font-family: Arial, sans-serif;">                  
+                                          <!--Facebook-->
+                                          <a class="socialLink" alias="" conversion="false" data-linkto="https://" href="#" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color:#ffffff;text-decoration:underline;" target="_blank" title="Monash University Facebook" >Facebook</a><span class="social-icon-divider">&nbsp;|&nbsp;</span>
+                                          <!--//Facebook-->           
+                                          <!--Twitter-->
+                                          <a class="socialLink" alias="" conversion="false" data-linkto="https://" href="#" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color:#ffffff;text-decoration:underline;" target="_blank" title="Monash University Twitter">Twitter</a><span class="social-icon-divider">&nbsp;|&nbsp;</span>
+                                          <!--//Twitter-->              
+                                          <!--Linkedin-->
+                                          <a class="socialLink" alias="" conversion="false" data-linkto="https://" href="#" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color:#ffffff;text-decoration:underline;" target="_blank" title="Monash University LinkedIn">LinkedIn</a><span class="social-icon-divider">&nbsp;|&nbsp;</span>
+                                          <!--//Linkedin-->                       
+                                          <!--Youtube-->
+                                          <a class="socialLink" alias="" conversion="false" data-linkto="https://" href="#" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color:#ffffff;text-decoration:underline;" target="_blank" title="Monash University YouTube">YouTube</a><span class="social-icon-divider">&nbsp;|&nbsp;</span>
+                                          <!--//Youtube-->        
+                                                                   
+                                        </td>
+                                      </tr>
+                                      <!--//Social Media Links-->
+                                    </table>
+                                  </td>
+                                  <!--//Content-->
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!--#### //SOCIAL MEDIA SECTION ####--> 
+
+              <!--#### FOOTER API ####-->
+              <tr>
+                <td width="100%" 
+                    style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+                  <img src="./images/footer_api_image.png"
+                       width="100%"
+                       style="display: block; border: 0px; -ms-interpolation-mode: bicubic;">
+                </td> 
+              </tr>
+              <!--#### //FOOTER API ####-->
+
+            </table>
+          </td>
+        </tr>
+        <!-- #### FLEXIBLE CONTENT END ####-->
+
+      </table>
+    </center>
+
+    <!--#### //MAIN WRAPPER ####-->
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js"></script>
+    <script src="external.js"></script>
+
+
+  </body>
+
+</html>
